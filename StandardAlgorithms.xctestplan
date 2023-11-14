@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "DAE26AB9-89E1-43BB-B069-428496A62BD7",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:StandardAlgorithms.xcodeproj",
+      "identifier" : "ED1198A62AFA4833008539E2",
+      "name" : "StandardAlgorithms"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:StandardAlgorithms.xcodeproj",
+        "identifier" : "ED1198B42AFA52D2008539E2",
+        "name" : "StandardAlgorithmTests"
+      }
+    }
+  ],
+  "version" : 1
+}
