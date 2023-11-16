@@ -10,11 +10,22 @@ import Foundation
 class Sorting{
     
     func bubbleSort(_ numbers: [Int]) -> [Int] {
-        if numbers[0] == 2 {
-            return [1,2,3,4,7]
-        } else {
-            return [1,3,4,5,7]
+        var sortedList = Array<Int>()
+        for number in 1..<numbers.count{
+            sortedList.append(numbers[number])
         }
+        
+        for i in 0..<sortedList.count{
+            for j in 0..<sortedList.count-i-1 {
+                if sortedList[j] > sortedList[j+1] {
+                    let temp = sortedList[j]
+                    sortedList.remove(at: j)
+                    sortedList.insert(temp, at: j+1)
+                }
+            }
+        }
+        return sortedList
+    
     }
     
     func quickSort(_ data: [Int]) -> [Int] {
